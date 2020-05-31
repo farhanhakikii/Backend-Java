@@ -8,9 +8,9 @@ public class App {
             int harga = (int) Console.readInputNumber("Masukkkan Harga: ");
             new Cicilan(harga, 1, 0);
             int durasi = (int) Console.readInputNumber("Masukkkan Durasi: ");
-            new Cicilan(1000000, durasi, 0);
+            new Cicilan(harga, durasi, 0);
             int bunga = (int) Console.readInputNumber("Masukkkan Bunga: ");
-            new Cicilan(1000000, 1, bunga);
+            new Cicilan(harga, durasi, bunga);
             
             double totalBayar = BayarCicil.totalBayar(harga, durasi, bunga);
             double bayarPerBulan = BayarCicil.hitungBayaranPerBulan(harga, durasi, bunga);
